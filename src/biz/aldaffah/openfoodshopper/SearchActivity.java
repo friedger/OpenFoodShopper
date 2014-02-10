@@ -21,7 +21,7 @@
  *
  * @author Nazim Boudeffa
  * And some googling
- * Thanks to Stéphane Gigandet from OpenFoodFacts.org
+ * Thanks to Stï¿½phane Gigandet from OpenFoodFacts.org
  * Thanks to Openintent.og for Opening OI Applications
  *
  **********************************************************************************************************************/
@@ -143,7 +143,7 @@ public class SearchActivity extends Activity {
 			}
 		} else {
 			Context context = getApplicationContext();
-			CharSequence text = "Pas de connexion réseau !";
+			CharSequence text = "Pas de connexion rï¿½seau !";
 			int duration = Toast.LENGTH_SHORT;
 
 			Toast toast = Toast.makeText(context, text, duration);
@@ -322,8 +322,6 @@ public class SearchActivity extends Activity {
 		 */
 		// intent.setComponent(new ComponentName(packageName,
 		// packageName+".ShoppingActivity"));
-		intent.setClassName(packageName, packageName
-				+ ".ui.ShoppingListsActivity");
 		intent.setType("org.openintents.type/string.arraylist.shopping");
 		intent.setAction("org.openintents.action.INSERT_FROM_EXTRAS");
 
@@ -334,9 +332,6 @@ public class SearchActivity extends Activity {
 		intent.putStringArrayListExtra(EXTRA_STRING_ARRAYLIST_PRICE, extraPrice);
 		intent.putStringArrayListExtra(EXTRA_STRING_ARRAYLIST_BARCODE,
 				extraBarcode);
-		Uri uri = Uri
-				.parse("content://org.openintents.shopping/lists/OpenFoodShopper");
-		intent.setData(uri);
 
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
