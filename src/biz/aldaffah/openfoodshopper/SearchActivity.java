@@ -21,7 +21,7 @@
  *
  * @author Nazim Boudeffa
  * And some googling
- * Thanks to St�phane Gigandet from OpenFoodFacts.org
+ * Thanks to Stéphane Gigandet from OpenFoodFacts.org
  * Thanks to Openintent.og for Opening OI Applications
  *
  **********************************************************************************************************************/
